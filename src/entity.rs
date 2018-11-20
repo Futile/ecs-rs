@@ -18,7 +18,7 @@ use SystemManager;
 
 pub type Id = u64;
 
-#[derive(Copy, Clone, Debug, Eq, Hash, PartialEq)]
+#[derive(Copy, Clone, Debug, Eq, Hash, PartialEq, Serialize, Deserialize)]
 pub struct Entity(Id);
 
 #[cfg(feature="serialisation")]

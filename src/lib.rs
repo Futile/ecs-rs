@@ -33,6 +33,10 @@
 extern crate cereal;
 extern crate vec_map;
 
+extern crate serde;
+#[macro_use]
+extern crate serde_derive;
+
 pub use aspect::Aspect;
 pub use component::{Component, ComponentList};
 pub use component::{EntityBuilder, EntityModifier};
